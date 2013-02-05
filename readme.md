@@ -1,6 +1,12 @@
 # spring-amqp-extras
 This is a project that contains nice extras to complement spring-amqp.
 
+Carfax src repository:
+https://github.com/CARFAX/spring-amqp-extras
+
+Carfax CI server instance: pscim02
+http://pscim02:8090/job/spring-amqp-extras%20publish%20from%20master/
+
 
 
 

@@ -2,14 +2,11 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'maven'
-apply from: 'https://raw.github.com/tomhermann/gradle-scripts/master/sources-javadoc.gradle'
 repositories {
-    mavenCentral()
+	
     maven {
-		  url 'http://maven.springframework.org/milestone/'
-		  url 'http://repository.springsource.com/maven/bundles/release/'
-    }
-
+	  url 'http://resolver/all'	
+	}
 }
 
 dependencies {
@@ -25,7 +22,3 @@ dependencies {
    		"org.mockito:mockito-all:1.8.5"
 }
 
-
-if(!System.getProperty('release')){
-  version = "${version}-SNAPSHOT"	
-}
