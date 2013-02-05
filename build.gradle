@@ -2,8 +2,11 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'maven'
-repositories {
-	
+
+sourceCompatibility = 1.5
+targetCompatibility = sourceCompatibility
+
+repositories {	
     maven {
 	  url 'http://resolver/all'	
 	}
